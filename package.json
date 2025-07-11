@@ -1,0 +1,16 @@
+{
+  "name": "vit-site",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel serve --open",
+    "build": "parcel build --public-url=/dist/"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "sass": "^1.89.2"
+  }
+}
