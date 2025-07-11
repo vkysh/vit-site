@@ -4,11 +4,20 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel serve --open",
-    "build": "parcel build --public-url=/dist/"
+    "build": "parcel build --public-url=/dist/",
+    "lint:css": "stylelint \"src/**/*.scss\"",
+    "lint:css:fix": "stylelint \"src/**/*.scss\" --fix",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.4",
-    "parcel": "^2.15.4"
+    "parcel": "^2.15.4",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.6.2",
+    "stylelint": "^15.11.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^35.0.0",
+    "stylelint-scss": "^4.6.0"
   },
   "dependencies": {
     "sass": "^1.89.2"
