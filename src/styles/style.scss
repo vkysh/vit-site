@@ -1,2 +1,7 @@
-//@use "./utils";
-//@use "./blocks";
+@use "./utils" as *;
+@use "./blocks" as *;
+
+body {
+  padding: 0;
+  margin: 0;
+}
